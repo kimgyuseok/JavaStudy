@@ -1,0 +1,13 @@
+package codingtest;
+
+
+
+public class ex04 {
+	public static void main(String[] args) {
+		long n = 118372;
+		
+		String temp = Long.toString(n);
+		long[] number = new long[temp.length()];
+	}
+
+}

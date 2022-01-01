@@ -1,0 +1,23 @@
+package codingtest;
+
+import java.util.Arrays;
+import java.util.Collections;
+
+public class ex04 {
+	public static void main(String[] args) {
+		long n = 118372;
+		
+		String temp = Long.toString(n);
+		long[] lnumber = new long[temp.length()];
+		Long[] Lnumber = new Long[temp.length()];
+		
+		for(int i=0;i<lnumber.length;i++) {
+			lnumber[i] = temp.charAt(i)-'0';
+			Lnumber[i] = lnumber[i]; 
+//			System.out.println(number[i]);
+		}
+		Arrays.sort(Lnumber, Collections.reverseOrder());
+		System.out.println(Arrays.toString(Lnumber));
+	}
+
+}
